@@ -2,31 +2,62 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Chonni Downloads</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chonni Apps</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
       text-align: center;
-      background: #111;
-      color: white;
       padding: 50px;
     }
-    h1 { font-size: 3rem; }
-    a {
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #00bfff;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 2rem;
+      color: #00ffff;
+    }
+
+    .app {
+      margin: 20px 0;
+    }
+
+    a.download-btn {
       display: inline-block;
-      background: #00bfff;
+      background-color: #00bfff;
       color: white;
       padding: 15px 30px;
       border-radius: 10px;
       text-decoration: none;
       font-size: 1.2rem;
+      transition: 0.3s;
     }
-    a:hover { background: #0099cc; }
+
+    a.download-btn:hover {
+      background-color: #0099cc;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Bienvenido a Chonni Downloads</h1>
-  <p>Haz clic para descargar:</p>
-  <a href="archivo.zip" download>⬇ Descargar archivo</a>
+  <h1>BIENVENIDO A CHONNY!</h1>
+
+  <h2>Mis aplicaciones:</h2>
+
+  <div class="app">
+    <p>Google Chrome Plus</p>
+    <a class="download-btn" href="Google Chrome Plus.zip" download>⬇ Descargar</a>
+  </div>
+
 </body>
 </html>
