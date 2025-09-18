@@ -7,13 +7,13 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      /* Imagen de fondo sin overlay */
       background: url('fondo.png') center/cover no-repeat;
       margin: 0;
       color: white;
       text-align: center;
       padding: 50px;
       min-height: 100vh;
+      scroll-behavior: smooth; /* Activa el scroll suave */
     }
     
     h1 {
@@ -41,6 +41,7 @@
       text-decoration: none;
       font-size: 1.2rem;
       transition: 0.3s;
+      cursor: pointer;
     }
 
     a.download-btn:hover {
@@ -50,40 +51,64 @@
     p {
       font-size: 1.1rem;
     }
+
+    /* Secciones destino */
+    .seccion {
+      height: 100vh; /* ocupa toda la pantalla */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0,0,0,0.4);
+      margin-top: 50px;
+      border-radius: 20px;
+    }
   </style>
 </head>
 <body>
   <h1>¡Bienvenido a la web de Chonni!</h1>
 
-  <h2>Aqui puedes descargar todas mi aplicaciones</h2>
+  <h2>Aquí puedes descargar todas mis aplicaciones</h2>
 
   <div class="app">
     <p>Google Chrome Plus</p>
-    <a class="download-btn" href="Google Chrome Plus.zip" download>⬇ Descargar</a>
+    <a class="download-btn" href="#chrome">⬇ Descargar</a>
   </div>
 
   <div class="app">
     <p>Tinder Plus</p>
-    <a class="download-btn" href="tinder plus.zip" download>⬇ Descargar</a>
+    <a class="download-btn" href="#tinder">⬇ Descargar</a>
   </div>
 
-   <div class="app">
+  <div class="app">
     <p>Calculadora Plus</p>
-    <a class="download-btn" href="calculadora plus.zip" download>⬇ Descargar</a>
+    <a class="download-btn" href="#calc">⬇ Descargar</a>
   </div>
 
   <div class="app">
     <p>Bloc de notas Plus</p>
-    <a class="download-btn" href="bloc de notas plus.zip" download>⬇ Descargar</a>
+    <a class="download-btn" href="#bloc">⬇ Descargar</a>
   </div>
-  
+
+  <!-- Secciones destino -->
+  <div id="chrome" class="seccion">
+    <h2>Aquí estaría el enlace final de descarga de Google Chrome Plus</h2>
+    <a class="download-btn" href="Google Chrome Plus.zip" download>📥 Descargar ahora</a>
+  </div>
+
+  <div id="tinder" class="seccion">
+    <h2>Aquí estaría el enlace final de descarga de Tinder Plus</h2>
+    <a class="download-btn" href="tinder plus.zip" download>📥 Descargar ahora</a>
+  </div>
+
+  <div id="calc" class="seccion">
+    <h2>Aquí estaría el enlace final de descarga de Calculadora Plus</h2>
+    <a class="download-btn" href="calculadora plus.zip" download>📥 Descargar ahora</a>
+  </div>
+
+  <div id="bloc" class="seccion">
+    <h2>Aquí estaría el enlace final de descarga de Bloc de notas Plus</h2>
+    <a class="download-btn" href="bloc de notas plus.zip" download>📥 Descargar ahora</a>
+  </div>
+
 </body>
 </html>
-
-
-
-
-
-
-
-
